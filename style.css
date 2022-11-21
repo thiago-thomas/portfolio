@@ -1,0 +1,32 @@
+/* Imports */
+/* General Setup */
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p, li, input, a {
+    font-size: 2rem;
+}
+
+/* Header Layout */
+/* Main Layout */
+/* Home Section */
+/* About Me Section */
+/* Projects Section */
+/* Contact Section */
+/* Footer Layout */
