@@ -2,28 +2,64 @@
 /* General Setup */
 
 html {
-    font-size: 10px;
-    scroll-behavior: smooth;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(2, 2, 37);
+  color: white;
 }
 
 /* Typography */
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 h2 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-    font-size: 2.8rem;
+  font-size: 2.8rem;
 }
 
 p, li, input, a {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Header Layout */
+header ul {
+  list-style: none;
+}
+
+header a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+  outline: none;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace; /* TODO: Change font */
+  text-transform: capitalize;
+}
+
+header a:visited, 
+header a:link, 
+header a:focus {
+  color: white;
+}
+
+header a:hover {
+  color: darkgray;
+}
+
 /* Main Layout */
 /* Home Section */
 /* About Me Section */
