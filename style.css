@@ -1,6 +1,11 @@
 /* Imports */
 /* General Setup */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -29,6 +34,10 @@ p, li, input, a {
 }
 
 /* Header Layout */
+header {
+  padding: 0 20px;
+}
+
 header ul {
   list-style: none;
 }
@@ -41,6 +50,8 @@ header a {
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 2px solid white;
+  text-align: center;
 }
 
 header a.logo {
@@ -48,6 +59,7 @@ header a.logo {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace; /* TODO: Change font */
   text-transform: capitalize;
+  padding: 40px;
 }
 
 header a:visited, 
@@ -61,6 +73,10 @@ header a:hover {
 }
 
 /* Main Layout */
+main section {
+  padding: 30px 20px;
+}
+
 /* Home Section */
 /* About Me Section */
 /* Projects Section */
