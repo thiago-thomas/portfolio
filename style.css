@@ -77,6 +77,11 @@ main section {
   padding: 30px 20px;
 }
 
+main section .sec-contents {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 /* Home Section */
 /* About Me Section */
 /* Projects Section */
