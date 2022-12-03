@@ -36,7 +36,7 @@ p, li, input, a {
 /* Header Layout */
 header {
   padding: 0 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 header ul {
@@ -75,7 +75,7 @@ header a:hover {
 
 /* Main Layout */
 main section {
-  padding: 30px 30px;
+  padding: 75px 30px;
 }
 
 main section .sec-contents {
@@ -87,21 +87,23 @@ main section .sec-contents {
 #home .sec-contents {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between
-}
-
-#home .sec-contents .home-left h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
+  justify-content: center
 }
 
 #home .sec-contents .home-left {
   flex: 1 400px;
-} 
+  margin-bottom: 40px;
+}
+
+#home .sec-contents .home-left h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
 
 #home .sec-contents .home-right {
   width: 300px;
-  height: 500px;
+  height: 300px;
+  background-color: black;
 } 
 /* About Me Section */
 /* Projects Section */
