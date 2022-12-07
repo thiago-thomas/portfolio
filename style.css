@@ -171,5 +171,9 @@ main section .sec-contents {
 }
 
 /* About Me Section */
-/* Contact Section */
+/* Skills Section */
+#skills ul {
+  list-style: none;
+  text-align: center;
+}
 /* Footer Layout */
