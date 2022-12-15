@@ -1,6 +1,7 @@
 /* Imports */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+
 /* General Setup */
 * {
   margin: 0;
@@ -16,6 +17,7 @@ body {
   background-color: #020225;
   color: white;
 }
+
 
 /* Typography */
 h1 {
@@ -34,8 +36,8 @@ p, li, input, a {
   font-size: 2rem;
 }
 
-/* Header Layout */
 
+/* Header Layout */
 header ul {
   list-style: none;
 }
@@ -70,6 +72,7 @@ header a:hover {
   color: darkgray;
 }
 
+
 /* Main Layout */
 header,
 main section {
@@ -85,6 +88,7 @@ main h2 {
   margin-bottom: 18px;
 }
 
+
 /* Home Section */
 #home .sec-contents {
   display: flex;
@@ -94,7 +98,7 @@ main h2 {
 }
 
 #home .sec-contents .home-left {
-  flex: 1 700px;
+  flex: 1 400px;
 }
 
 #home .sec-contents .home-left h1 {
@@ -107,6 +111,7 @@ main h2 {
   height: 300px;
   background-color: #42189a;
 } 
+
 
 /* Projects Section */
 #projects .project-container {
@@ -164,6 +169,7 @@ main h2 {
   background-color: #5e1fd9;
   transition: 0.5s;
 }
+
 
 /* About Me Section */
 /* Skills Section */
@@ -274,6 +280,7 @@ main h2 {
   transform: translateX(-100%);
 }
 
+
 /* Footer Layout */
 footer {
   background-color: black;
@@ -305,40 +312,44 @@ footer .footer-socials i.fa-linkedin {
   padding: 5px;
 }
 
-/*
+/* Media Query */
 @media screen and (min-width: 1023px) {
-  header, 
-  header ul {
+  header,
+  main section {
+    max-width: 1000px;
+    margin-bottom: 200px;
+  }
+  
+  header,
+  header nav ul {
     display: flex;
   }
 
   header {
-    justify-content: center;
-  }
-
-  header nav a {
-    border: 1px solid white;
-    padding: 7px;
+    margin-top: 50px;
+    justify-content: space-between;
   }
 
   header li {
     margin-right: 25px;
   }
 
-  header a:visited, 
+  header li:last-of-type {
+    margin-right: 0;
+  }
+
+  header a.logo {
+    padding: 0px;
+  }
+
+  header a {
+    padding: 7px;
+  }
+
   header a:link, 
+  header a:visited, 
   header a:focus {
-    color: #dbdbdb;
-    border-color: #dbdbdb;
+    border-bottom: none;
   }
 
-  header nav a:hover {
-    color: white;
-    border-color: white;
-  }
-
-  header nav a.logo {
-    border: 1px solid;
-  }
 }
-*/
