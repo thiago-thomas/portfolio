@@ -205,7 +205,7 @@ main h2 {
   transform: translateX(-50%) translateY(-50%) scale(3);
 }
 .skill-card:hover .skill-card__body {
-  height: 170px;
+  height: 195px;
 }
 .skill-card:hover .skill-card__knowledge li {
   transform: translateX(0);
@@ -235,8 +235,8 @@ main h2 {
 .skill-card__header {
   position: relative;
   background-color: #eb6c3f;
-  height: 170px;
-  margin: -20px -20px 20px -20px;
+  height: 200px;
+  margin: -20px -20px 0 -20px;
   transition: height .5s;
   overflow: hidden;
 }
