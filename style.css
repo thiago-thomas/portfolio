@@ -1,6 +1,8 @@
 /* Imports */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
 
 /* General Setup */
 * {
@@ -20,6 +22,15 @@ body {
 
 
 /* Typography */
+p, li, input, a {
+  font-size: 2rem;
+  font-family: 'Inconsolata', monospace;
+}
+
+h1, h2, h3 {
+  font-family: 'Saira', sans-serif;
+}
+
 h1 {
   font-size: 5rem;
 }
@@ -30,10 +41,6 @@ h2 {
 
 h3 {
   font-size: 2.8rem;
-}
-
-p, li, input, a {
-  font-size: 2rem;
 }
 
 
@@ -55,9 +62,9 @@ header a {
 }
 
 header a.logo {
-  font-size: 2.5rem;
+  font-family: 'VT323', monospace;
+  font-size: 3.5rem;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace; /* TODO: Change font */
   text-transform: capitalize;
   padding: 70px 0;
 }
@@ -82,10 +89,14 @@ main section {
   max-width: 800px;
 }
 
-main h1, 
+main h1 {
+  margin-bottom: 10px;
+}
+
 main h2 {
   padding-top: 15px;
-  margin-bottom: 18px;
+  padding-bottom: 25px;
+	text-align: center;
 }
 
 
@@ -95,7 +106,7 @@ main h2 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+	gap: 70px;
 }
 
 #home .sec-contents .home-left {
@@ -108,8 +119,8 @@ main h2 {
 
   
 #home .sec-contents .home-right .home-right-img {
-  width: 300px;
-  height: 300px;
+	width: 250px;
+	height: 250px;
   border-radius: 50%;
   border: 5px solid #42189a;
 } 
@@ -282,7 +293,6 @@ main h2 {
 }
 
 .skill-card__body .skill-card__knowledge {
-  margin-top: 10px;
   color: #424242;
 }
 
@@ -326,11 +336,10 @@ footer .footer-socials i.fa-linkedin {
 }
 
 /* Media Query */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   header,
   main section {
     max-width: 1000px;
-    margin-bottom: 200px;
   }
   
   header,
@@ -341,6 +350,10 @@ footer .footer-socials i.fa-linkedin {
   header {
     margin-top: 50px;
     justify-content: space-between;
+  }
+
+  main section {
+    margin-bottom: 72px;
   }
 
   header li {
