@@ -22,7 +22,7 @@ body {
 
 
 /* Typography */
-p, li, input, a {
+p, li, input, a, span {
   font-size: 2rem;
   font-family: 'Inconsolata', monospace;
 }
@@ -150,6 +150,115 @@ main h2 {
   display: inline-block;
   margin-bottom: 8px;
 }
+#projects .project-container .project-div .project-img.comp {
+  background-image: url(./imgs/comp.png);
+  background-size: cover;
+  background-position: center;
+}
+#projects .project-container .project-div .project-img.wce {
+  background-image: url(./imgs/wce.png);
+  background-size: cover;
+  background-position: center;
+}
+#projects .project-container .project-div .project-img.bakers {
+  background-image: url(./imgs/bakers.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#projects .project-container .project-div .project-img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+#projects .project-container .project-div .modal-img {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 200px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+#projects .project-container .project-div .modal-img .project-img-bigger {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+#projects .project-container .project-div .modal-img .close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Caption of Modal Image */
+#projects .project-container .project-div .modal-img .caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+  height: 150px;
+}
+#projects .project-container .project-div .modal-img .caption span {
+  font-size: 2.9rem;
+}
+
+
+/* Add Animation */
+#projects .project-container .project-div .modal-img .project-img-bigger,
+#projects .project-container .project-div .modal-img .caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+
 
 #projects .project-container .project-div h3,
 #projects .project-container .project-div p {
