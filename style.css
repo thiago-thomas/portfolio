@@ -296,11 +296,6 @@ main h2 {
 
 /* About Me Section */
 /* Skills Section */
-#skills ul {
-  list-style: none;
-  text-align: center;
-}
-
 .skill-card_container {
   display: flex;
   justify-content: space-between;
@@ -308,9 +303,11 @@ main h2 {
   gap: 30px;
 }
 
+
 .skill-card {
   flex: 1 200px;
   padding: 20px;
+  padding-bottom: 10px;
   background-color: #FFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   cursor: pointer;
@@ -324,18 +321,6 @@ main h2 {
   overflow: hidden;
 }
 
-.skill-card__header.card__html {
-  background-color: #ef652a;
-}
-
-.skill-card__header.card__css {
-  background-color: #2965f1;
-}
-
-.skill-card__header.card__js {
-  background-color: #f0be25;
-}
-
 .skill-card__header .skill-card__icon {
   position: absolute;
   top: 50%;
@@ -346,6 +331,18 @@ main h2 {
   height: 128px;
   transition: transform .5s;
 }
+
+.skill-card__header.card__html {
+  background-color: #ef652a;
+}
+.skill-card__header.card__css {
+  background-color: #2965f1;
+}
+.skill-card__header.card__js {
+  background-color: #f0be25;
+}
+
+
 
 .skill-card__body {
   transition: height .5s;
@@ -361,15 +358,15 @@ main h2 {
 }
 
 .skill-card__body .skill-card__knowledge {
-  color: #424242;
+  padding-left: 20px;
+  color: #000;
 }
 
 .skill-card__body .skill-card__knowledge li {
   margin-top: 5px;
   font-size: 1.5rem;
-  list-style: square;
+  list-style: disc;
 }
-
 
 /* Footer Layout */
 footer {
@@ -445,18 +442,31 @@ footer .footer-socials i.fa-linkedin {
     border-bottom: none;
   }
 
-  /*
+  .skill-card {
+    padding-bottom: 0;
+  }
+
+  .skill-card__body {
+    height: 35px;
+  }
+
+  .skill-card__body .skill-card__knowledge li {
+    transition-duration: 0;
+    transition-delay: .5s;
+    transform: translateX(-100%);
+  }
+
   .skill-card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
   .skill-card:hover .skill-card__header {
-    height: 40px;
+    height: 70px;
   }
   .skill-card:hover .skill-card__icon {
     transform: translateX(-50%) translateY(-50%) scale(3);
   }
   .skill-card:hover .skill-card__body {
-    height: 195px;
+    height: 152px;
   }
   .skill-card:hover .skill-card__knowledge li {
     transform: translateX(0);
@@ -481,5 +491,5 @@ footer .footer-socials i.fa-linkedin {
   .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
     transition-delay: 1.5s;
   }
-  */
+
 }
