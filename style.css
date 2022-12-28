@@ -166,9 +166,21 @@ main h2 {
   background-position: center;
 }
 
+#projects .project-container .project-div .project-img .fa {
+  font-size: 40px;
+  margin-top: 100px;
+  visibility: hidden;
+}
+
 #projects .project-container .project-div .project-img:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
+}
+
+#projects .project-container .project-div .project-img:hover .fa {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
 }
 
 /* The Modal (background) */
@@ -295,6 +307,10 @@ main h2 {
 
 
 /* About Me Section */
+#aboutme p {
+  margin: 15px 0;
+}
+
 /* Skills Section */
 .skill-card_container {
   display: flex;
