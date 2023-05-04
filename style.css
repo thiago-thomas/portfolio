@@ -321,7 +321,7 @@ main h2 {
 
 
 .skill-card {
-  flex: 1 100px;
+  flex: 1 200px;
   padding: 20px;
   padding-bottom: 10px;
   background-color: #FFF;
@@ -357,9 +357,7 @@ main h2 {
 .skill-card__header.card__js {
   background-color: #f0be25;
 }
-.skill-card__header.card__react {
-  background-color: #23272f;
-}
+
 
 
 .skill-card__body {
