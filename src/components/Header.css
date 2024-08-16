@@ -1,0 +1,82 @@
+header,
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a,
+header button {
+  text-transform: uppercase;
+}
+
+header nav a {
+  text-decoration: underline;
+}
+
+header a {
+  font-weight: 500;
+  display: block;
+  outline: none;
+  text-decoration: none;
+}
+
+header a.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header a:visited, 
+header a:link, 
+header a:focus {
+  color: white;
+}
+
+header a:hover {
+  color: darkgray;
+}
+
+header button.btn-primary {
+  padding: 12px 36px;
+}
+
+header {
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav ul {
+  gap: 26px;
+}
+
+@media screen and (min-width: 1024px) {
+  header,
+  header nav ul {
+    flex-direction: row;
+  }
+
+  header {
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  header nav ul {
+    gap: 34px;
+  }
+
+  header nav a {
+    text-decoration: none;
+  }
+
+  header a:link, 
+  header a:visited, 
+  header a:focus {
+    border-bottom: none;
+  }
+}
