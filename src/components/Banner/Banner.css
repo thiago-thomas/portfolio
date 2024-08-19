@@ -1,0 +1,45 @@
+/* Home Section */
+#home .sec-contents {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+	gap: 70px;
+}
+
+#home .sec-contents .home-left {
+  flex: 1 400px;
+}
+
+#home .sec-contents .home-left h1 {
+  margin-bottom: 14px;
+}
+  
+#home .sec-contents .home-left p {
+  font-size: 2.2rem;
+  color: #adacac;
+}
+
+#home .sec-contents .home-right .img-container {
+  animation: updown 3s linear infinite; 
+  border-radius: 50%;
+}
+
+#home .sec-contents .home-right .img-container img{
+	width: 350px;
+	height: 350px;
+  border-radius: 50%;
+}
+
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

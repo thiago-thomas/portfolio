@@ -49,6 +49,7 @@ header {
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 header nav ul {

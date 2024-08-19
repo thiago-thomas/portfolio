@@ -1,5 +1,6 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moderustic&display=swap');
 
 /* General Setup */
 * {
@@ -15,7 +16,7 @@ html {
 body {
   background-color: #101630;
   color: white;
-  padding: 40px 40px; 
+  padding: 50px 80px; 
 }
 
 
@@ -25,8 +26,12 @@ p, li, input, a, span, button {
   font-family: "Patrick Hand", cursive;
 }
 
+h1, h2, h3 {
+  font-family: "Moderustic", sans-serif;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -49,4 +54,18 @@ h3 {
 
 .btn-primary:hover {
   filter: brightness(90%);
+}
+
+
+/* Main Layout */
+main section {
+  margin: 0 auto;
+  margin-bottom: 120px;
+  max-width: 1200px;
+}
+
+main h2 {
+  padding-top: 15px;
+  padding-bottom: 25px;
+	text-align: center;
 }
