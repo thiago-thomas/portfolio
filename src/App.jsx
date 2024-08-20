@@ -1,5 +1,6 @@
 import "./App.css";
-import Header from "./components/Header/Header.jsx";
+
+import Navigation from "./components/Navigation/Navigation.jsx";
 import Banner from "./components/Banner/Banner.jsx";
 
 export default function App() {
@@ -9,8 +10,12 @@ export default function App() {
 
   return (
     <>
-      <Header title={name} />
-      <Banner name={name} role={role} github={github} />
+      <header>
+        <Navigation logo={name} />
+      </header>
+      <main>
+        <Banner name={name} role={role} github={github} />
+      </main>
     </>
   );
 }

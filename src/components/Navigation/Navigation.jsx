@@ -1,11 +1,11 @@
-import "./Header.css";
+import "./Navigation.css";
 
-export default function Header({ title }) {
+export default function Navigation({ logo }) {
   return (
-    <header>
+    <>
       <div>
         <a href="#" className="logo">
-          {title}
+          {logo}
         </a>
       </div>
       <nav>
@@ -27,6 +27,6 @@ export default function Header({ title }) {
       <div>
         <button className="btn-primary">Contact</button>
       </div>
-    </header>
+    </>
   );
 }
