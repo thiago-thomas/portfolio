@@ -23,6 +23,7 @@
 #home .sec-contents .home-right .img-container {
   animation: updown 3s linear infinite; 
   border-radius: 50%;
+  border: 5px solid darkblue;
 }
 
 #home .sec-contents .home-right .img-container img{
