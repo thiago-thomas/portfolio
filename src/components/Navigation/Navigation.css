@@ -11,25 +11,22 @@ header ul {
 
 header a,
 header button {
-  font-size: 2.2rem;
   text-transform: uppercase;
 }
 
-header nav a {
-  text-decoration: underline;
-}
-
 header a {
+  font-size: 1.8rem;
   font-weight: 500;
   display: block;
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 header a.logo {
   font-size: 3.5rem;
   font-weight: bold;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 header a:visited, 
@@ -44,13 +41,6 @@ header a:hover {
 
 header button.btn-primary {
   padding: 12px 36px;
-}
-
-header {
-  gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 120px;
 }
 
 header nav ul {

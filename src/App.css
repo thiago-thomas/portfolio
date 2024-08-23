@@ -1,6 +1,6 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moderustic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* General Setup */
 * {
@@ -22,8 +22,8 @@ body {
 
 /* Typography */
 p, li, input, a, span, button {
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
-  font-family: "Patrick Hand", cursive;
 }
 
 h1, h2, h3 {
@@ -56,12 +56,16 @@ h3 {
   filter: brightness(90%);
 }
 
-
-/* Main Layout */
+/* Layout */
+header,
 main section {
   margin: 0 auto;
   margin-bottom: 120px;
-  max-width: 1200px;
+  max-width: 1550px;
+}
+
+header {
+  gap: 50px;
 }
 
 main h2 {
