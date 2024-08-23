@@ -14,7 +14,7 @@ header button {
   text-transform: uppercase;
 }
 
-header a {
+header nav a {
   font-size: 1.8rem;
   font-weight: 500;
   display: block;
@@ -46,6 +46,34 @@ header button.btn-primary {
 header nav ul {
   gap: 26px;
 }
+
+header div.social-container,
+header div.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header div.social-container {
+  gap: 24px;
+}
+
+header div.social-icons a {
+  padding: 10px 13px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+header div.social-icons a:nth-of-type(2) {
+  padding: 10px 12px;
+}
+
+header div.social-icons a:hover {
+  background-color: white;
+  color: black;
+}
+
 
 @media screen and (min-width: 1024px) {
   header,

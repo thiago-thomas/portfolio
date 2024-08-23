@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import "./Navigation.css";
 
 export default function Navigation({ logo }) {
@@ -21,7 +24,15 @@ export default function Navigation({ logo }) {
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="social-container">
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/thiago-thomas/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} size="xl" />
+          </a>
+          <a href="https://github.com/thiago-thomas" target="_blank">
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+          </a>
+        </div>
         <button className="btn-primary">Contact</button>
       </div>
     </>
