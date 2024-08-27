@@ -59,14 +59,14 @@ header div.social-container {
 }
 
 header div.social-icons a {
-  padding: 10px 13px;
+  width: 45px;
+  height: 45px;
   border: 1px solid white;
   border-radius: 50%;
   text-decoration: none;
-}
-
-header div.social-icons a:nth-of-type(2) {
-  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header div.social-icons a:hover {
