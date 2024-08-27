@@ -27,11 +27,10 @@
 }
 
 #home .sec-contents .home-right .img-container img{
-	width: 350px;
-	height: 350px;
+	width: 100%;
+	height: 100%;
   border-radius: 50%;
 }
-
 
 @keyframes updown {
   0% {
