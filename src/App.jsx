@@ -2,6 +2,7 @@ import "./App.css";
 
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Banner from "./components/Banner/Banner.jsx";
+import Skills from "./components/Skills/Skills.jsx";
 
 export default function App() {
   const name = "Thiago Thomas";
@@ -15,6 +16,7 @@ export default function App() {
       </header>
       <main>
         <Banner name={name} role={role} github={github} />
+        <Skills />
       </main>
     </>
   );
