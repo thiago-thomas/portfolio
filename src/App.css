@@ -60,8 +60,12 @@ h3 {
 header,
 main section {
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
   max-width: 1550px;
+}
+
+main section {
+  padding-top: 40px;
 }
 
 header {
@@ -69,8 +73,7 @@ header {
 }
 
 main h2 {
-  padding-top: 15px;
-  padding-bottom: 25px;
+  margin-bottom: 80px;
 	text-align: center;
 }
 
