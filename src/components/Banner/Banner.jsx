@@ -13,8 +13,11 @@ export default function Banner({ name, role, github }) {
             I'm a {role}
           </h1>
           <p>
-            Welcome to my portfolio, here you will find some of my work as a
-            {" " + role}, stay cozy!
+            I am a person who is very passionate about technology and I seek to
+            study and learn in this area day after day, I always update myself
+            on new technologies, and always delving into the issues I already
+            know, such as learning new technologies that arise more and more.
+            each day.
           </p>
         </div>
         <div class="home-right">
