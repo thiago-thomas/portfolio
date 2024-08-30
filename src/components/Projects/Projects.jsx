@@ -36,6 +36,7 @@ export default function Projects() {
         showDots={true}
         autoPlay={true}
         keyBoardControl={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
         containerClass="project-carousel"
       >
         <div className="project-item">

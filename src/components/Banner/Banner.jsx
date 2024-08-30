@@ -8,7 +8,9 @@ export default function Banner({ name, role, github }) {
       <div class="sec-contents">
         <div class="home-left">
           <h1>
-            Hello, I'm {name} {role}
+            Hey, I'm {name}
+            <br />
+            I'm a {role}
           </h1>
           <p>
             Welcome to my portfolio, here you will find some of my work as a
