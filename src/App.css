@@ -13,9 +13,20 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Dark/Light Mode Setup */
+:root {
+  --body_background: white;
+  --body_color: black;
+}
+
+[data-theme="dark"] {
+  --body_background: #101630;
+  --body_color: white;
+}
+
 body {
-  background-color: #101630;
-  color: white;
+  background-color: var(--body_background);
+  color: var(--body_color);
   padding: 50px; 
 }
 

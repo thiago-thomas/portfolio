@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import "./Navigation.css";
+import DarkModeSwitch from "../DarkModeSwitch/DarkModeSwitch";
 
 export default function Navigation({ logo }) {
   return (
@@ -33,7 +34,8 @@ export default function Navigation({ logo }) {
             <FontAwesomeIcon icon={faGithub} size="xl" />
           </a>
         </div>
-        <button className="btn-primary">Contact</button>
+        <DarkModeSwitch />
+        {/* <button className="btn-primary">Contact</button> */}
       </div>
     </>
   );

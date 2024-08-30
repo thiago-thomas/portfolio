@@ -1,5 +1,7 @@
 header,
-header nav ul {
+header nav ul,
+header div.social-container,
+header div.social-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +34,7 @@ header a.logo {
 header a:visited, 
 header a:link, 
 header a:focus {
-  color: white;
+  color: var(--body_color);
 }
 
 header a:hover {
@@ -43,25 +45,20 @@ header button.btn-primary {
   padding: 12px 36px;
 }
 
-header nav ul {
-  gap: 26px;
-}
-
-header div.social-container,
+header nav ul,
 header div.social-icons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 header div.social-container {
-  gap: 24px;
+  gap: 50px;
 }
+
 
 header div.social-icons a {
   width: 45px;
   height: 45px;
-  border: 1px solid white;
+  border: 1px solid var(--body_color);
   border-radius: 50%;
   text-decoration: none;
   display: flex;
@@ -70,14 +67,16 @@ header div.social-icons a {
 }
 
 header div.social-icons a:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--body_color);
+  color: var(--body_background);
 }
 
 
 @media screen and (min-width: 1024px) {
   header,
-  header nav ul {
+  header nav ul,
+  header div.social-container,
+  header div.social-icons {
     flex-direction: row;
   }
 
@@ -90,6 +89,10 @@ header div.social-icons a:hover {
     gap: 34px;
   }
 
+  header div.social-icons {
+    gap: 14px;
+  }
+
   header nav a {
     text-decoration: none;
   }
@@ -98,5 +101,11 @@ header div.social-icons a:hover {
   header a:visited, 
   header a:focus {
     border-bottom: none;
+  }
+
+  header div.social-container,
+  header div.social-icons {
+    align-items: center;
+
   }
 }
