@@ -41,7 +41,7 @@ export default function Skills() {
             icon={faJs}
             size="xl"
           />
-          <h3 className="skill-card__text">Javascript</h3>
+          <h3 className="skill-card__text">JS</h3>
         </div>
         <div className="skills-card">
           <FontAwesomeIcon

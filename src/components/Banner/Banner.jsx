@@ -7,11 +7,11 @@ export default function Banner({ name, role, github }) {
     <section id="home">
       <div class="sec-contents">
         <div class="home-left">
-          <h1>
+          <h2>
             Hey, I'm {name}
             <br />
             I'm a {role}
-          </h1>
+          </h2>
           <p>
             I am a person who is very passionate about technology and I seek to
             study and learn in this area day after day, I always update myself

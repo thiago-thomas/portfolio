@@ -45,14 +45,16 @@ header button.btn-primary {
   padding: 12px 36px;
 }
 
-header nav ul,
-header div.social-icons {
-  gap: 24px;
+header,
+header div.social-container {
+  gap: 38px;
 }
 
-header div.social-container {
-  gap: 50px;
+header nav ul,
+header div.social-icons {
+  gap: 16px;
 }
+
 
 
 header div.social-icons a {

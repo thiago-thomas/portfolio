@@ -11,7 +11,7 @@
   flex: 1 400px;
 }
 
-#home .sec-contents .home-left h1 {
+#home .sec-contents .home-left h2 {
   margin-bottom: 14px;
 }
   
@@ -42,5 +42,11 @@
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #home .sec-contents .home-left h2 {
+    text-align: left;
   }
 }

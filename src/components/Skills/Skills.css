@@ -2,16 +2,16 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 70px 200px;
+  gap: 40px 60px;
 }
 
 .skill-card__image {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 8px;
 }
 
 .skill-card__text {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }

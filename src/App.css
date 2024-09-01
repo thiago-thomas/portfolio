@@ -27,7 +27,7 @@ html {
 body {
   background-color: var(--body_background);
   color: var(--body_color);
-  padding: 50px; 
+  padding: 30px 16px; 
 }
 
 
@@ -42,11 +42,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -71,7 +71,7 @@ h3 {
 header,
 main section {
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   max-width: 1200px;
 }
 
@@ -79,16 +79,22 @@ main section {
   padding-top: 40px;
 }
 
-header {
-  gap: 50px;
-}
-
 main h2 {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 	text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    padding-inline: 50px;
+  }
+
+  header,
+  main section {
+    margin-bottom: 200px;
+  }
+
+
   h1 {
     font-size: 4.5rem;
   }
