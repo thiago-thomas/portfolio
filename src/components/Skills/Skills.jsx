@@ -17,7 +17,8 @@ import "./Skills.css";
 export default function Skills() {
   return (
     <section id="skills">
-      <h2>Skills</h2>
+      <h2 className="section-title">Skills</h2>
+      <p className="section-description">Here are some of my top skills</p>
       <div className="skills-card-container">
         <div className="skills-card">
           <FontAwesomeIcon

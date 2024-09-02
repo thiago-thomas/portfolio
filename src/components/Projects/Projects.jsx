@@ -29,7 +29,8 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 className="section-title">Projects</h2>
+      <p className="section-description">Here are the most recent examples of my work</p>
       <Carousel
         responsive={responsive}
         infinite={true}

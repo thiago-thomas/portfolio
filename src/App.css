@@ -79,9 +79,16 @@ main section {
   padding-top: 40px;
 }
 
-main h2 {
-  margin-bottom: 30px;
+main h2.section-title {
+  margin-bottom: 12px;
 	text-align: center;
+}
+
+main p.section-description {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #adacac;
 }
 
 @media screen and (min-width: 1024px) {
@@ -94,13 +101,16 @@ main h2 {
     margin-bottom: 200px;
   }
 
-
   h1 {
     font-size: 4.5rem;
   }
   
-  h2 {
+  main h2.section-title {
     font-size: 3.5rem;
+  }
+
+  main p.section-description {
+    font-size: 22px;
   }
   
   h3 {
