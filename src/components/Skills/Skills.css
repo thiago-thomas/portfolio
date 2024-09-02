@@ -6,12 +6,27 @@
 }
 
 .skill-card__image {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin-bottom: 8px;
 }
 
 .skill-card__text {
   font-size: 12px;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills-card-container {
+    column-gap: 80px;
+  }
+
+  .skill-card__image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill-card__text {
+    font-size: 16px;
+  }
 }
