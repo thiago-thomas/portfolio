@@ -1,3 +1,5 @@
+import { ReactTyped } from 'react-typed'
+
 import "./Banner.css";
 
 export default function Banner({ name, role, github }) {
@@ -8,9 +10,7 @@ export default function Banner({ name, role, github }) {
       <div class="sec-contents">
         <div class="home-left">
           <h2>
-            Hey, I'm {name}
-            <br />
-            I'm a {role}
+            Hey, I'm <ReactTyped strings={[name, role]} typeSpeed={80} backDelay={2000} backSpeed={30} loop />
           </h2>
           <p>
             I am a person who is very passionate about technology and I seek to
