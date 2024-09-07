@@ -5,6 +5,7 @@ import Banner from "./components/Banner/Banner.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 
+
 export default function App() {
   const name = "Thiago Thomas";
   const role = "Front-End Developer";

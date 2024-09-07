@@ -7,6 +7,8 @@ import bakers from "../../assets/imgs/bakers.png";
 
 import "./Projects.css";
 
+import ProjectCard from "../ProjectCard/ProjectCard";
+
 export default function Projects() {
   const responsive = {
     superLargeDesktop: {
@@ -30,26 +32,41 @@ export default function Projects() {
   return (
     <section id="projects">
       <h2 className="section-title">Projects</h2>
-      <p className="section-description">Here are the most recent examples of my work</p>
-      <Carousel
-        responsive={responsive}
-        infinite={true}
-        showDots={true}
-        autoPlay={true}
-        keyBoardControl={true}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        containerClass="project-carousel"
-      >
-        <div className="project-item">
-          <img src={comp} alt="Torvalds" />
+      <p className="section-description">
+        Here are the most recent examples of my work
+      </p>
+      <div className="project-container">
+        <div className="project-card">
+          <ProjectCard
+            imgPath={comp}
+            isBlog={false}
+            title="Company Comp"
+            description="Some description text..."
+            ghLink="#"
+            demoLink="#"
+          />
         </div>
-        <div className="project-item">
-          <img src={wce} alt="Torvalds" />
+        <div className="project-card">
+          <ProjectCard
+            imgPath={wce}
+            isBlog={false}
+            title="World Class Experience"
+            description="Some description text..."
+            ghLink="#"
+            demoLink="#"
+          />
         </div>
-        <div className="project-item">
-          <img src={bakers} alt="Torvalds" />
+        <div className="project-card">
+          <ProjectCard
+            imgPath={bakers}
+            isBlog={false}
+            title="Bakers"
+            description="Some description text..."
+            ghLink="https://github.com/soumyajit4419/Chatify"
+            demoLink="https://chatify-49.web.app/"
+          />
         </div>
-      </Carousel>
+      </div>
     </section>
   );
 }
