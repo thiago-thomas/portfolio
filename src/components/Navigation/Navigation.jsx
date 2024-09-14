@@ -36,7 +36,6 @@ export default function Navigation({ logo }) {
           </a>
         </div>
         <DarkModeSwitch />
-        {/* <button className="btn-primary">Contact</button> */}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
-//import { CgWebsite } from "react-icons/cg";
-//import { BsGithub } from "react-icons/bs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faPage4 } from "@fortawesome/free-brands-svg-icons";
 
-import './ProjectCard.css'
+import "./ProjectCard.css";
 
 export default function ProjectCard(props) {
   return (
@@ -9,28 +9,27 @@ export default function ProjectCard(props) {
       <img className="project-card__img" src={props.imgPath} alt="card-img" />
       <div className="project-card__body">
         <h3 className="project-card__title">{props.title}</h3>
-        <p className="project-card__text" style={{ textAlign: "justify" }}>
-          {props.description}
-        </p>
-        <a className="button-primary" href={props.ghLink} target="_blank">
-          {/*<BsGithub /> &nbsp; //Icone do github */}
-          {props.isBlog ? "Blog" : "GitHub"}
-        </a>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
+        <p className="project-card__text">{props.description}</p>
+        <div className="project-card-link">
           <a
-            href={props.demoLink}
+            className="project-card-link__anchor"
+            href={props.ghLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
           >
-            {/* <CgWebsite /> &nbsp; //Icone da página  */}
-            {"Demo"}
+            <FontAwesomeIcon className="project-card-link__icon" icon={faGithub} />
+            {"GitHub"}
           </a>
-        )}
+          {props.demoLink && (
+            <a
+              className="project-card-link__anchor"
+              href={props.demoLink}
+              target="_blank"
+            >
+              <FontAwesomeIcon className="project-card-link__icon" icon={faPage4} />
+              {"Demo"}
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -53,20 +53,6 @@ h3 {
   font-size: 1.8rem;
 }
 
-/* Global classes */
-.btn-primary {
-  background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
-  color: white;
-  border: none;
-  border-radius: 8px; 
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  filter: brightness(90%);
-}
-
 /* Layout */
 header,
 main section {
