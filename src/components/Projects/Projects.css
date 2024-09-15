@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 50px 30px;
 }
 
 .project-container > div {

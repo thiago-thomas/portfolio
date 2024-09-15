@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faPage4 } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faWindowMaximize } from "@fortawesome/free-regular-svg-icons";
 
 import "./ProjectCard.css";
 
@@ -8,8 +9,10 @@ export default function ProjectCard(props) {
     <div className="project-card">
       <img className="project-card__img" src={props.imgPath} alt="card-img" />
       <div className="project-card__body">
-        <h3 className="project-card__title">{props.title}</h3>
-        <p className="project-card__text">{props.description}</p>
+        <div className="project-card__header">
+          <h3 className="project-card__title">{props.title}</h3>
+          <p className="project-card__text">{props.description}</p>
+        </div>
         <div className="project-card-link">
           <a
             className="project-card-link__anchor"
@@ -25,7 +28,7 @@ export default function ProjectCard(props) {
               href={props.demoLink}
               target="_blank"
             >
-              <FontAwesomeIcon className="project-card-link__icon" icon={faPage4} />
+              <FontAwesomeIcon className="project-card-link__icon" icon={faWindowMaximize} />
               {"Demo"}
             </a>
           )}

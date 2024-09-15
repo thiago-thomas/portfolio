@@ -1,10 +1,9 @@
-import "./App.css";
-
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Banner from "./components/Banner/Banner.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 
+import "./App.css";
 
 export default function App() {
   const name = "Thiago Thomas";

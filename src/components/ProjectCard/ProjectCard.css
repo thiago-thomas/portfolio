@@ -25,6 +25,9 @@
   flex: 1 1 auto;
   padding: 20px;
   color: var(--body_color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card__title {
@@ -33,14 +36,14 @@
 }
 
 .project-card__text {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   text-align: justify;
 }
 
 .project-card-link {
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 .project-card-link__anchor {
