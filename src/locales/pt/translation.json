@@ -1,4 +1,18 @@
 {
+  "hi": "Olá, eu sou",
   "role": "Desenvolvedor Front-End",
-  "description": "Esta é uma aplicação multilingue usando React e i18next."
+  "aboutme": "Sou uma pessoa apaixonada por tecnologia e estou constantemente buscando aprender e me aperfeiçoar nessa área. Gosto de me manter atualizado com as novas tendências tecnológicas, ao mesmo tempo que aprofundo meus conhecimentos nas ferramentas e conceitos que já domino. Minha curiosidade me impulsiona a explorar as inovações que surgem diariamente, sempre buscando me desenvolver e aplicar novas soluções.",
+  "home": "Início",
+  "skills": "Habilidades",
+  "skills-desc": "Essas são as minhas principais habilidades",
+  "projects": "Projetos",
+  "projects-desc": "Esses são os mais recentes exemplos do meu trabalho",
+  "rf-desc": "Um projeto em React, no qual você pode visualizar os filmes que estão sendo lançados e fazer uma lista dos seus filmes favoritos",
+  "bk-desc": "Um exemplo de uma página para uma padaria",
+  "wce-desc": "Um exemplo de uma página para uma experiência master class",
+  "brg-desc": "Um exemplo de uma página para uma hamburgueria",
+  "mtc-desc": "Um exemplo de uma página para uma barbearia",
+  "sln-desc": "Um exemplo de uma página para um salão de beleza"
 }
+
+

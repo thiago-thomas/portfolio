@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
+import { useTranslation } from 'react-i18next';
+
 import "./Navigation.css";
 import DarkModeSwitch from "../DarkModeSwitch/DarkModeSwitch";
 
 export default function Navigation({ logo }) {
+  const { t } = useTranslation();
+
   return (
     <>
       <div>
@@ -15,13 +19,13 @@ export default function Navigation({ logo }) {
       <nav>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">{t('home')}</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">{t('skills')}</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">{t('projects')}</a>
           </li>
         </ul>
       </nav>

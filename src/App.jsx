@@ -3,8 +3,8 @@ import Banner from "./components/Banner/Banner.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 
-import { useTranslation } from 'react-i18next';
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 import "./App.css";
 

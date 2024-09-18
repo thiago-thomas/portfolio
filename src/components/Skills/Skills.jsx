@@ -12,13 +12,17 @@ import {
   faJava,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { useTranslation } from 'react-i18next';
+
 import "./Skills.css";
 
 export default function Skills() {
+  const { t } = useTranslation();
+
   return (
     <section id="skills">
-      <h2 className="section-title">Skills</h2>
-      <p className="section-description">Here are some of my top skills</p>
+      <h2 className="section-title">{t('skills')}</h2>
+      <p className="section-description">{t('skills-desc')}</p>
       <div className="skills-card-container">
         <div className="skills-card">
           <FontAwesomeIcon
