@@ -1,63 +1,95 @@
-header,
-header nav ul,
-header div.social-container,
-header div.social-icons {
+.navbar,
+.navbar .social-container {
+  gap: 16px;
+}
+
+.navbar {
+  padding: 1rem 0px;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.navbar-brand {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-header ul {
-  list-style: none;
-}
-
-header a,
-header button {
-  text-transform: uppercase;
-}
-
-header nav a {
-  font-size: 1.8rem;
-  font-weight: 500;
-  display: block;
-  outline: none;
-  text-decoration: underline;
-}
-
-header a.logo {
+.navbar-brand a.logo {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
 }
 
-header a:visited, 
-header a:link, 
-header a:focus {
+.navbar-brand .hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-brand .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--body_color);
+  margin: 5px 0;
+}
+
+.navbar a {
+  text-transform: uppercase;
+}
+
+.navbar a:visited, 
+.navbar a:link, 
+.navbar a:focus {
   color: var(--body_color);
 }
 
-header a:hover {
+.navbar a:hover {
   color: darkgray;
 }
 
-header button.btn-primary {
-  padding: 12px 36px;
+.nav-menu {
+display: none;
 }
 
-header,
-header div.social-container {
-  gap: 38px;
+.nav-menu.open {
+  display: block;
 }
 
-header nav ul,
-header div.social-icons {
+.nav-menu > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.nav-menu > ul,
+.nav-menu .social-icons {
   gap: 16px;
 }
 
+.nav-menu a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  outline: none;
+  text-decoration: underline;
+}
 
+.navbar .social-container,
+.navbar .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-header div.social-icons a {
+.navbar .social-icons a {
   width: 45px;
   height: 45px;
   border: 1px solid var(--body_color);
@@ -69,46 +101,58 @@ header div.social-icons a {
   transition: 0.3s all ease;
 }
 
-header div.social-icons a:hover {
+.navbar .social-icons a:hover {
   background-color: var(--body_color);
   color: var(--body_background);
 }
 
 
-@media screen and (min-width: 1024px) {
-  header,
-  header nav ul,
-  header div.social-container,
-  header div.social-icons {
+@media (min-width: 1024px) {
+  .navbar,
+  .navbar .nav-menu > ul,
+  .navbar .social-container,
+  .navbar .social-icons {
     flex-direction: row;
   }
 
-  header {
+  .navbar,
+  .navbar .nav-menu {
+    display: flex !important;
+  }
+  
+  .navbar,
+  .navbar .nav-menu {
     justify-content: space-between;
     gap: 40px;
   }
 
-  header nav ul {
+  .navbar .nav-menu > ul {
     gap: 34px;
+    margin-bottom: 0;
   }
 
-  header div.social-icons {
+  .navbar .social-icons {
     gap: 14px;
   }
 
-  header nav a {
+  .navbar .nav-menu  a {
     text-decoration: none;
   }
 
-  header a:link, 
-  header a:visited, 
-  header a:focus {
+  .navbar .nav-menu > ul a:link, 
+  .navbar .nav-menu > ul a:visited, 
+  .navbar .nav-menu > ul a:focus {
     border-bottom: none;
   }
 
-  header div.social-container,
-  header div.social-icons {
+  .navbar .social-container,
+  .navbar .social-icons {
     align-items: center;
 
   }
+  
+  .navbar-brand .hamburger {
+    display: none; /* Esconda o ícone de hambúrguer em telas grandes */
+  }
+  
 }

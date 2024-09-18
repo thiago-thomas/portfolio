@@ -15,8 +15,6 @@ export default function DarkModeSwitch() {
       setDarkMode();
     }
   }
-
-  setDarkMode();
   
   return (
     <div>
