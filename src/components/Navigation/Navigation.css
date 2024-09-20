@@ -1,14 +1,27 @@
+#home,
+#skills,
+#projects {
+  scroll-margin-top: 100px;
+}
+
 .navbar,
 .navbar .social-container {
   gap: 16px;
 }
 
 .navbar {
-  padding: 1rem 0px;
   position: fixed;
+  left: 0;
   top: 0;
-  width: 95%;
-  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--body_background);
+  border-bottom: 1px solid var(--body_color);
+  opacity: 0.9;
+}
+
+.navbar-content {
+  padding: 30px 20px;
 }
 
 .navbar-brand {
@@ -106,21 +119,33 @@ display: none;
   color: var(--body_background);
 }
 
+.navbar .language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+  gap: 16px;
+}
+
+.nabbar .language-container button {
+  width: 100px;
+}
+
 
 @media (min-width: 1024px) {
-  .navbar,
+  .navbar .navbar-content,
   .navbar .nav-menu > ul,
   .navbar .social-container,
   .navbar .social-icons {
     flex-direction: row;
   }
 
-  .navbar,
+  .navbar .navbar-content,
   .navbar .nav-menu {
     display: flex !important;
   }
   
-  .navbar,
+  .navbar .navbar-content,
   .navbar .nav-menu {
     justify-content: space-between;
     gap: 40px;
@@ -153,6 +178,12 @@ display: none;
   
   .navbar-brand .hamburger {
     display: none; /* Esconda o ícone de hambúrguer em telas grandes */
+  }
+
+  .navbar .language-container {
+    flex-direction: row;
+    margin-top: 0;
+    gap: 0;
   }
   
 }
