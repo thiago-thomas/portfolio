@@ -17,6 +17,7 @@ export default function Navigation({ logo }) {
 
   function changeLanguage(lng) {
     i18n.changeLanguage(lng);
+    toggleMenu();
   }
 
   return (
@@ -67,8 +68,8 @@ export default function Navigation({ logo }) {
               <DarkModeSwitch />
             </div>
             <div className="language-container">
-              <button onClick={() => changeLanguage("en")}>English</button>
-              <button onClick={() => changeLanguage("pt")}>Português</button>
+              <button onClick={() => changeLanguage("en")}><img width="48" height="48" src="https://img.icons8.com/fluency/48/usa-circular.png" alt="usa-circular"/></button>
+              <button onClick={() => changeLanguage("pt")}><img width="48" height="48" src="https://img.icons8.com/fluency/48/brazil-circular.png" alt="brazil-circular"/></button>
             </div>
           </div>
         </div>

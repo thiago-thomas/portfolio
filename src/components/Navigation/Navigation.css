@@ -127,8 +127,17 @@ display: none;
   gap: 16px;
 }
 
-.nabbar .language-container button {
-  width: 100px;
+.navbar .language-container button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .language-container button > img:hover {
+  filter: brightness(120%);
 }
 
 
@@ -148,7 +157,7 @@ display: none;
   .navbar .navbar-content,
   .navbar .nav-menu {
     justify-content: space-between;
-    gap: 40px;
+    gap: 28px;
   }
 
   .navbar .nav-menu > ul {
@@ -171,7 +180,8 @@ display: none;
   }
 
   .navbar .social-container,
-  .navbar .social-icons {
+  .navbar .social-icons,
+  .navbar .language-container {
     align-items: center;
 
   }
@@ -183,7 +193,7 @@ display: none;
   .navbar .language-container {
     flex-direction: row;
     margin-top: 0;
-    gap: 0;
+    gap: 14px;
   }
   
 }
