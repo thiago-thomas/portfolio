@@ -1,26 +1,23 @@
 import "./DarkModeSwitch.css";
 
+import { useState, useEffect } from "react";
+
 export default function DarkModeSwitch() {
-  function setDarkMode() {
-    document.querySelector("body").setAttribute("data-theme", "dark");
-  }
-  function setLightMode() {
-    document.querySelector("body").setAttribute("data-theme", "light");
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.querySelector("body").setAttribute("data-theme", isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
+
+  function toggleTheme() {
+    setIsDarkMode(!isDarkMode);
   }
 
-  function toggleTheme(e) {
-    if (e.target.checked) {
-      setLightMode();
-    } else {
-      setDarkMode();
-    }
-  }
-  
   return (
     <div>
-      <label id="switch" class="switch">
-        <input type="checkbox" onChange={toggleTheme} id="slider" />
-        <span class="slider round"></span>
+      <label id="switch" className="switch">
+        <input type="checkbox" onChange={toggleTheme} id="slider" checked={!isDarkMode} />
+        <span className="slider round"></span>
       </label>
     </div>
   );
