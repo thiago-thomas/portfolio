@@ -68,8 +68,8 @@ export default function Navigation({ logo }) {
               <DarkModeSwitch />
             </div>
             <div className="language-container">
-              <button onClick={() => changeLanguage("en")}><img width="48" height="48" src="https://img.icons8.com/fluency/48/usa-circular.png" alt="usa-circular"/></button>
-              <button onClick={() => changeLanguage("pt")}><img width="48" height="48" src="https://img.icons8.com/fluency/48/brazil-circular.png" alt="brazil-circular"/></button>
+              <button onClick={() => changeLanguage("en")}><img width="48" height="48" src="https://img.icons8.com/fluency/48/great-britain-circular.png" alt="usa-circular" title="English"/></button>
+              <button onClick={() => changeLanguage("pt")}><img width="48" height="48" src="https://img.icons8.com/fluency/48/portugal-circular.png" alt="brazil-circular" title="Português" /></button>
             </div>
           </div>
         </div>
