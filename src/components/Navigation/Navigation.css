@@ -17,7 +17,7 @@
   z-index: 1;
   background-color: var(--body_background);
   border-bottom: 1px solid var(--body_color);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .navbar-content {
@@ -67,12 +67,17 @@
 }
 
 .nav-menu {
-display: none;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .nav-menu.open {
-  display: block;
+  max-height: 500px; /* Adjust this value based on your content height */
+  transition: max-height 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 
 .nav-menu > ul {
   display: flex;
@@ -158,6 +163,8 @@ display: none;
   .navbar .nav-menu {
     justify-content: space-between;
     gap: 28px;
+    max-height: none !important;
+    overflow: visible;
   }
 
   .navbar .nav-menu > ul {
