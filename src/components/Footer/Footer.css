@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.footer-msg,
+.footer-msg > a {
+  color: var(--body_color);
+}

@@ -3,6 +3,7 @@ import Banner from "./components/Banner/Banner.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import { useTranslation } from 'react-i18next';
+import Footer from "./components/Footer/Footer.jsx";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ export default function App() {
 
   const name = "Thiago Thomas";
   const github = "thiago-thomas";
+  const linkedin = github;
 
   return (
     <>
@@ -26,6 +28,7 @@ export default function App() {
         <Skills />
         <Projects />
       </main>
+      <Footer name={name} linkedinProfile={linkedin} />
     </>
   );
 }
