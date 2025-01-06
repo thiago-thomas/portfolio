@@ -13,13 +13,21 @@ export default function ProjectCard(props) {
           <h3 className="project-card__title">{props.title}</h3>
           <p className="project-card__text">{props.description}</p>
         </div>
+        <div className="project-card-tags">
+          {props.tags?.map((tag, i) => (
+            <span key={i}>{tag}</span>
+          ))}
+        </div>
         <div className="project-card-link">
           <a
             className="project-card-link__anchor"
             href={props.ghLink}
             target="_blank"
           >
-            <FontAwesomeIcon className="project-card-link__icon" icon={faGithub} />
+            <FontAwesomeIcon
+              className="project-card-link__icon"
+              icon={faGithub}
+            />
             {"GitHub"}
           </a>
           {props.demoLink && (
@@ -28,7 +36,10 @@ export default function ProjectCard(props) {
               href={props.demoLink}
               target="_blank"
             >
-              <FontAwesomeIcon className="project-card-link__icon" icon={faWindowMaximize} />
+              <FontAwesomeIcon
+                className="project-card-link__icon"
+                icon={faWindowMaximize}
+              />
               {"Demo"}
             </a>
           )}

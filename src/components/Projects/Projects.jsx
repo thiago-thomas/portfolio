@@ -27,6 +27,7 @@ export default function Projects() {
           description={t('rf-desc')}
           ghLink="https://github.com/thiago-thomas/react-flix"
           demoLink="https://reactflix-thiago-thomas.netlify.app/listafilmes"
+          tags={[t('responsible'),"react","movie db api","javascript","css", "html"]}
         />
         <ProjectCard
           imgPath={bakers}
@@ -34,6 +35,7 @@ export default function Projects() {
           description={t('bk-desc')}
           ghLink="https://github.com/thiago-thomas/projects/tree/main/bakers"
           demoLink="https://thiago-thomas.github.io/projects/bakers/"
+          tags={[t('responsible'),"javascript","css", "html"]}
         />
         <ProjectCard
           imgPath={wce}
@@ -41,6 +43,7 @@ export default function Projects() {
           description={t('wce-desc')}
           ghLink="https://github.com/thiago-thomas/projects/tree/main/wce"
           demoLink="https://thiago-thomas.github.io/projects/wce/"
+          tags={[t('responsible'),"javascript","css", "html"]}
         />
         <ProjectCard
           imgPath={burgers}
@@ -48,6 +51,7 @@ export default function Projects() {
           description={t('brg-desc')}
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Burger's"
           demoLink=""
+          tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
         />
         <ProjectCard
           imgPath={mustache}
@@ -55,6 +59,7 @@ export default function Projects() {
           description={t('mtc-desc')}
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Mustache's"
           demoLink=""
+          tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
         />
         <ProjectCard
           imgPath={salon}
@@ -62,6 +67,7 @@ export default function Projects() {
           description={t('sln-desc')}
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Salon's"
           demoLink=""
+          tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
         />
       </div>
     </section>
