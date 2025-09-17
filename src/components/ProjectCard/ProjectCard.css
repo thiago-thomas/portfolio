@@ -13,6 +13,15 @@
   overflow: hidden;
   box-shadow: 0 4px 4px 5px var(--body_color);
 }
+.project-card--featured {
+  background-color: var(--highlight-color);
+  box-shadow: 0 8px 10px 5px gray;
+}
+
+.project-card--featured:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 8px 10px var(--body_color);
+}
 
 .project-card__img {
   width: 100%;

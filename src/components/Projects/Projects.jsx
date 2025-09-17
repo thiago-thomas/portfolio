@@ -29,6 +29,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/simple-coffee-listing"
           demoLink="https://simple-coffee-listing-thiago-thomas.netlify.app"
           tags={[t('responsible'),"react","coffee api","typescript","tailwind","css","html"]}
+          variant="featured" // Example of using the variant prop
         />
         <ProjectCard
           imgPath={reactflix}
@@ -37,6 +38,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/react-flix"
           demoLink="https://reactflix-thiago-thomas.netlify.app/listafilmes"
           tags={[t('responsible'),"react","movie db api","javascript","css", "html"]}
+          variant="featured" // Example of using the variant prop
         />
         <ProjectCard
           imgPath={bakers}
@@ -45,6 +47,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/projects/tree/main/bakers"
           demoLink="https://thiago-thomas.github.io/projects/bakers/"
           tags={[t('responsible'),"javascript","css", "html"]}
+          variant="featured" // Example of using the variant prop
         />
         <ProjectCard
           imgPath={wce}
@@ -53,6 +56,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/projects/tree/main/wce"
           demoLink="https://thiago-thomas.github.io/projects/wce/"
           tags={[t('responsible'),"javascript","css", "html"]}
+          variant="featured" // Example of using the variant prop
         />
         <ProjectCard
           imgPath={burgers}
@@ -61,6 +65,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Burger's"
           demoLink=""
           tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
+          variant="featured" // Example of using the variant prop
         />
         <ProjectCard
           imgPath={mustache}
@@ -69,6 +74,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Mustache's"
           demoLink=""
           tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
+          variant="featured" // Example of using the variant prop
         />
         <ProjectCard
           imgPath={salon}
@@ -77,6 +83,7 @@ export default function Projects() {
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Salon's"
           demoLink=""
           tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
+          variant="featured" // Example of using the variant prop
         />
       </div>
     </section>
