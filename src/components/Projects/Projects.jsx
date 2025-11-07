@@ -37,7 +37,7 @@ export default function Projects() {
           description={t('rf-desc')}
           ghLink="https://github.com/thiago-thomas/react-flix"
           demoLink="https://reactflix-thiago-thomas.netlify.app/listafilmes"
-          tags={[t('responsible'),"react","movie db api","javascript","css", "html"]}
+          tags={[t('responsible'),"react","redux","movie db api","javascript","css", "html"]}
           variant="featured" // Example of using the variant prop
         />
         <ProjectCard
