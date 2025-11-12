@@ -5,6 +5,7 @@ import burgers from "../../assets/imgs/burgers.png";
 import mustache from "../../assets/imgs/mustache.png";
 import salon from "../../assets/imgs/salon.png";
 import scl from "../../assets/imgs/simple-coffee-listing.jpeg";
+import githubProfile from "../../assets/imgs/github-profile.jpeg";
 
 import { useTranslation } from 'react-i18next';
 
@@ -23,12 +24,21 @@ export default function Projects() {
       </p>
       <div className="project-container">
         <ProjectCard
+          imgPath={githubProfile}
+          title="Github Profile"
+          description={t('gp-desc')}
+          ghLink="https://github.com/thiago-thomas/github-profile"
+          demoLink="https://github-profile-thiago-thomas.netlify.app"
+          tags={[t('responsible'),"github api","react","typescript","css","html"]}
+          variant="featured" // Example of using the variant prop
+        />
+        <ProjectCard
           imgPath={scl}
           title="Simple Coffee Listing"
           description={t('scl-desc')}
           ghLink="https://github.com/thiago-thomas/simple-coffee-listing"
           demoLink="https://simple-coffee-listing-thiago-thomas.netlify.app"
-          tags={[t('responsible'),"react","coffee api","typescript","tailwind","css","html"]}
+          tags={[t('responsible'),"coffee api","redux","react","typescript","tailwind","css","html"]}
           variant="featured" // Example of using the variant prop
         />
         <ProjectCard
@@ -37,7 +47,7 @@ export default function Projects() {
           description={t('rf-desc')}
           ghLink="https://github.com/thiago-thomas/react-flix"
           demoLink="https://reactflix-thiago-thomas.netlify.app/listafilmes"
-          tags={[t('responsible'),"react","redux","movie db api","javascript","css", "html"]}
+          tags={[t('responsible'),"movie db api","react","typescript","css","html"]}
           variant="featured" // Example of using the variant prop
         />
         <ProjectCard
@@ -46,7 +56,7 @@ export default function Projects() {
           description={t('bk-desc')}
           ghLink="https://github.com/thiago-thomas/projects/tree/main/bakers"
           demoLink="https://thiago-thomas.github.io/projects/bakers/"
-          tags={[t('responsible'),"javascript","css", "html"]}
+          tags={[t('responsible'),"javascript","css","html"]}
           variant="featured" // Example of using the variant prop
         />
         <ProjectCard
@@ -55,7 +65,7 @@ export default function Projects() {
           description={t('wce-desc')}
           ghLink="https://github.com/thiago-thomas/projects/tree/main/wce"
           demoLink="https://thiago-thomas.github.io/projects/wce/"
-          tags={[t('responsible'),"javascript","css", "html"]}
+          tags={[t('responsible'),"javascript","css","html"]}
           variant="featured" // Example of using the variant prop
         />
         <ProjectCard
@@ -64,25 +74,7 @@ export default function Projects() {
           description={t('brg-desc')}
           ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Burger's"
           demoLink=""
-          tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
-          variant="featured" // Example of using the variant prop
-        />
-        <ProjectCard
-          imgPath={mustache}
-          title="Mustache's"
-          description={t('mtc-desc')}
-          ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Mustache's"
-          demoLink=""
-          tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
-          variant="featured" // Example of using the variant prop
-        />
-        <ProjectCard
-          imgPath={salon}
-          title="Salon's"
-          description={t('sln-desc')}
-          ghLink="https://github.com/thiago-thomas/projects-bootstrap/tree/master/Salon's"
-          demoLink=""
-          tags={[t('responsible'),"bootstrap","javascript","css", "html"]}
+          tags={[t('responsible'),"bootstrap","javascript","css","html"]}
           variant="featured" // Example of using the variant prop
         />
       </div>

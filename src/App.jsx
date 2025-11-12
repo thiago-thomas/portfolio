@@ -8,11 +8,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
 export default function App() {
-  const { t, i18n } = useTranslation();
-
-  function changeLanguage(lng) {
-    i18n.changeLanguage(lng);
-  }
+  const { t } = useTranslation();
 
   const name = "Thiago Thomas";
   const github = "thiago-thomas";

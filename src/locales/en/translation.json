@@ -14,6 +14,7 @@
   "mtc-desc": "An example of a page for a barber shop",
   "sln-desc": "An example of a page for a beauty salon",
   "scl-desc": "A front-end challenge, where the goal is to create a coffee listing page with a specific design",
+  "gp-desc": "A React project that consumes the GitHub API to display user profile information and repositories",
   "footer-msg": "Made with ❤ by",
   "responsible": "Responsiveness"
 }
